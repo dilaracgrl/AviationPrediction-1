@@ -1,0 +1,11 @@
+# Data files (too large for GitHub)
+data/raw/*.csv
+data/processed/*.parquet
+data/processed/*.joblib
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
