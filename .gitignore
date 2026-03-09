@@ -7,5 +7,9 @@ data/processed/*.joblib
 # Python
 __pycache__/
 *.pyc
+.pytest_cache/
 .ipynb_checkpoints/
 .DS_Store
+
+# Personal (not for submission)
+PERSONAL_PIPELINE_GUIDE.md

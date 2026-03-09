@@ -71,7 +71,7 @@ Overall FP rate: **45.8%** of on-time flights falsely flagged. For a deployment 
 **File:** `notebooks/04_modelling.ipynb` — Section 8.4  
 **Problem:** Code hardcoded `tree_model_name = 'LightGBM-Tuned'` for importance plot; best model was RandomForest.  
 **Impact:** Feature importance chart in reports/ shows LightGBM-Tuned, not the deployed model.  
-**Fix:** Use `models[BEST_MODEL_NAME].feature_importances_` — corrected in notebook 05, saved as `reports/25_rf_feature_importance_corrected.png`.
+**Fix:** Use `models[BEST_MODEL_NAME].feature_importances_` — corrected in notebook 05, saved as `reports/28_rf_feature_importance_corrected.png`.
 
 ### Checks PASSED
 | Check | Result |

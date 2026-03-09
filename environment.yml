@@ -1,0 +1,12 @@
+# Optional conda environment for AviationPrediction (Python 3.10)
+# Create: conda env create -f environment.yml
+# Activate: conda activate aviation
+name: aviation
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - -r requirements.txt

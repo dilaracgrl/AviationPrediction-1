@@ -2,6 +2,8 @@
 
 Raw data files and processed parquet files are excluded from this repository due to file size. Follow these instructions to reproduce the dataset.
 
+For a full description of every raw variable, renamed column, and engineered feature used in this project, see **[DATA_DICTIONARY.md](DATA_DICTIONARY.md)**.
+
 ---
 
 ## Source
@@ -100,7 +102,7 @@ data/raw/T_ONTIME_REPORTING_JULY.csv
 
 > **Note:** BTS export filenames vary by month. The column rename map in notebook 01 handles any naming inconsistencies automatically via an `if k in raw.columns` guard.
 
-2. Run the notebooks in order to regenerate all processed files:
+2. Run the pipeline to regenerate all processed files. Either run the notebooks in order (01 → 05) or, from project root, run `./run_pipeline.sh` (executes `src/` scripts 01–05).
 
 ```
 notebooks/01_data_loading_and_quality.ipynb   → data/processed/model_dataset.parquet
